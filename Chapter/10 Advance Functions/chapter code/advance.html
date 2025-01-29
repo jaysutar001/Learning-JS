@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advance Functions</title>
+</head>
+<body>
+  <button id="my-button">
+  Click me
+  </button>
+  <script>
+    let button = document.querySelector('#my-button');
+    button.addEventListener('click',event => console.log('I am clicked'));
+
+
+
+    /*let sum = (num1,num2) =>
+    {
+      return num1 + num2;
+    };
+    let newSum = sum;
+    console.log(newSum(4,5));
+   console.log(sum(4,5)); 
+    let sumThreeNumbers = function(num1,num2,num3,sumTwoNumbers){
+      let sum1 = sumTwoNumbers(num1,num2);
+      return sumTwoNumbers(sum1,num3);
+    }
+    console.log(sumThreeNumbers(4,5,6, sum));
+    console.log(sumThreeNumbers);
+    console.log(typeof sumThreeNumbers);
+*/ 
+/*let sum = (num1,num2) => {
+  return num1 + num2;
+}
+console.log(sum(4,6))
+
+let square =num => num * num;
+console.log(square(5))*/ 
+let alarm = function(){
+  console.log(`Subaha ho gayi, uth jaao.${new Date()}`);
+};
+
+/*let timerId =setTimeout(alarm, 10000);
+console.log(`alarm set with timerId : ${timerId}` );
+//clearTimeout(timerId);*/
+
+setInterval(alarm,5000)
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
